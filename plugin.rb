@@ -22,7 +22,7 @@ after_initialize do
                     (!is_silenced? || target.staff?)
             end
             # Exception did not take effect, pass on up the chain instead
-            return super(target, notify_moderators: notify_moderators)
+            super(target, notify_moderators: notify_moderators)
         end
     end
     Guardian.send(:prepend, GuardianInterceptor)
@@ -37,7 +37,7 @@ after_initialize do
                 # Only for private messages
                 @opts[:archetype] == Archetype.private_message
             # Pass up on the chain instead
-            return super
+            super
         end
     end
     PostCreator.send(:prepend, PostCreatorInterceptor)
