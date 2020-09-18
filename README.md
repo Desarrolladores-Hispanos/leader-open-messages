@@ -49,3 +49,5 @@ The plugin intervenes in the guardian that decides whether a post can be created
 The prepend mechanism that is used to intervene in these checks is a standard one, and so is unlikely to break throughout Discourse updates, with the exception of the case where the names or parameter lists of `Guardian.can_send_private_message?` or `PostCreator.skip_validations?` change. Even if that happens, the forum will continue to function properly, only the plugin functionality will be broken.
 
 The logic ensures that only users who are Leaders (i.e. trust level 4) are affected. Other forum users and permissions are not affected and abide by the same message creation permissions as usual.
+
+#### Copyright 2020 Roblox Corporation
