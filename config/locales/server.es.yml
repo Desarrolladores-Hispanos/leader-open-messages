@@ -1,0 +1,3 @@
+es:
+  site_settings:
+    leader_open_messages_enabled: "Permitir a líder (NC4) enviar mensajes independientemente de la configuración de privacidad"
